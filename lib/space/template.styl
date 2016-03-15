@@ -1,0 +1,39 @@
+@import "assets/resources.styl"
+
+.Space
+	&-container
+		width 100%
+	&-container
+		display block
+	&-title
+		margin 0
+		padding 0 .5em 0 .5em
+		text-transform uppercase
+		font-size 1.5em
+		font-weight 700
+		color borderListMobile
+	&-subContainer
+		color letterColor
+		font-weight 300
+		margin 1em 1em
+		font-size 1.2em
+	&-contaimerImages
+		text-align center
+	&-image
+		width 100%
+
+@media screen and (min-width 768px)
+	.Space
+		&-title
+			margin 0
+			padding 3.5em .5em 0 .5em
+			font-size 2.5em
+		&-contaimerImages
+			padding 2em 4em
+
+@media screen and (min-width 1024px)
+	.Space
+		&-title
+			margin 0
+			padding 2em .5em 0 .5em
+			font-size 2.5em

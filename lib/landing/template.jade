@@ -1,9 +1,23 @@
-section(class="Landing", id="landing")
+article(class="Landing-images")
 	div(class="Landing-container")
-		div(id="imageTransition", class="Landing-image")
-			div(class="Landing-transparentImage")
-		div(class="Landing-mouseContainer")
-			a(href="#about", class="Landing-mouseLink smooth")
-				img(class="Landing-mouse", src="../public/images/mouse.png", alt="")
-	include ../about/template.jade
-	include ../counter/template.jade
+		div(class="Landing-containerWrapper")
+			div(class="Landing-wrapper")
+				div(class="Landing-wrapperIcon Landing-item icon-display")
+					//- img(src="../public/images/icons/computer-imac.svg" class="Landing-icon", alt="")
+				div(id="itemOne", class="Landing-wrapperNumber Landing-item") 19
+				div(class="Landing-wrapperText") projects completed
+			div(class="Landing-wrapper")
+				div(class="Landing-wrapperIcon Landing-item icon-user")
+					//- img(src="../public/images/icons/smiley.svg" class="Landing-icon", alt="")
+				div(id="itemTwo", class="Landing-wrapperNumber Landing-item") 10
+				div(class="Landing-wrapperText Landing-item") satisfied customers
+			div(class="Landing-wrapper")
+				div(class="Landing-wrapperIcon Landing-item icon-cup")
+					//- img(src="../public/images/icons/drink-coffee.svg" class="Landing-icon", alt="")
+				div(id="itemTree", class="Landing-wrapperNumber Landing-item") 1352
+				div(class="Landing-wrapperText Landing-item") cups of coffee
+			div(class="Landing-wrapper")
+				div(class="Landing-wrapperIcon Landing-item icon-camera2")
+					//- img(src="../public/images/icons/camera.svg" class="Landing-icon", alt="")
+				div(id="itemFour", class="Landing-wrapperNumber Landing-item") 246
+				div(class="Landing-wrapperText Landing-item") shots captured
