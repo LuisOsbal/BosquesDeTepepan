@@ -1,0 +1,77 @@
+@import "assets/resources.styl"
+
+.Amenities
+	&-container
+		width 100%
+	&-container
+		display block
+	&-title
+		margin 0
+		padding 3em .5em 0 .5em
+		text-transform uppercase
+		font-size 1.5em
+		font-weight 700
+		color borderListMobile
+	&-contaimerImages
+		color letterColor
+		font-weight 300
+		margin 1em 0 0
+		font-size 1.2em
+		text-align center
+	&-contaimerText
+		color letterColor
+		font-weight 300
+		margin 0
+		font-size 1.2em
+		text-align center
+	&-image
+		width 100%
+	&-paragraph
+		margin 1em
+	&-button
+		display block
+		padding .5em 0
+		background green
+		color black
+		font-weight bold
+		border-bottom 4px solid greenBorder
+		border-radius 10px
+		text-decoration none
+		margin 0 1em 1em 1em
+		&:hover
+			background greenBorder
+
+@media screen and (min-width 768px)
+	.Amenities
+		display block
+		&-container
+			height 282em
+			position relative
+			width 100%
+			display block
+		&-subContainer
+			position relative
+			height 25em
+			text-align center
+			display block
+			margin 0 0 2em 0
+		&-contaimerImages
+			width 45%
+			position absolute
+			top 0
+			display block
+		&-contaimerText
+			width 45%
+			position absolute
+			top 0
+			display block
+@media screen and (min-width 1024px)
+	.Amenities
+		&-container
+			height 322em
+		&-subContainer
+			position relative
+			height 30em
+			text-align center
+			display block
+			margin 0 0 1em 0
