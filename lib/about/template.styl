@@ -1,0 +1,85 @@
+@import "assets/resources.styl"
+
+.afterLineDecoration
+	&:after
+		content ''
+		display block
+		margin-right auto
+		width 10.5em
+		height 5px
+		background green
+		margin-top 0
+.About
+	&-bioContainer
+		display block
+		width 100%
+		margin-bottom 1em
+		padding 0
+	&-container
+		display block
+	&-title
+		margin 0
+		padding 3em .5em 0 .5em
+		text-transform uppercase
+		font-size 1.5em
+		font-weight 700
+		color borderListMobile
+	&-presentation
+		color letterColor
+		font-weight 300
+		margin 1em 1em
+		font-size 1.2em
+	&-subContainer
+		position relative
+		padding 2em 1em 1em
+		display block
+		height 690px
+	&-image
+		width 100%
+	&-biographyName
+		text-align center
+		color borderListMobile
+		font-weight 700
+		font-size 2em
+		letter-spacing .1em
+	&-biographySkills
+		text-align center
+		color borderListMobile
+		font-weight 600
+		font-size 1em
+		text-transform uppercase
+		letter-spacing .1em
+	&-biographyText
+		color letterColor
+		font-weight 300
+		margin 1em 1em
+		font-size 1.2em
+
+@media screen and (min-width 768px)
+	.About
+		&-title
+			margin 0
+			padding 3.5em .5em 0 .5em
+			font-size 2.5em
+		&-subContainer
+			height 425px
+		&-bioContainer
+			position absolute
+			top 1em
+			width 46%
+			display inline-block
+		&-photo
+			left 2em
+		&-biography
+			right 2em
+		&-biographyName
+			text-align initial
+		&-biographySkills
+			text-align initial
+
+@media screen and (min-width 1024px)
+	.About
+		&-title
+			margin 0
+			padding 2em .5em 0 .5em
+			font-size 2.5em

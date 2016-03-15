@@ -1,0 +1,44 @@
+.Landing
+	&-image
+		background url('../images/coding.jpg') fixed
+		background-position center
+		background-repeat no-repeat
+		background-size cover
+		height 100vh
+		position relative
+		width 100%
+		z-index 1
+	&-containerText
+		-moz-box-sizing border-box
+		background #FFF
+		box-sizing border-box
+		margin 0
+		padding 2em 0
+		position relative
+		width 100%
+		z-index 2
+	&-transparentImage
+		background rgba(0, 0, 0, .6)
+		height 100vh
+		position absolute
+		top 0
+		width 100%
+		z-index 2
+	&-mouseContainer
+		display none
+	&-mouse
+		overflow hidden
+@media screen and (min-width 768px)
+	.Landing
+		&-mouseContainer
+			bottom 1em
+			display block
+			position absolute
+			text-align center
+			width 100%
+			z-index 3
+		&-mouse
+			cursor pointer
+			transition all 0.2s ease-in
+			&:hover
+				opacity 0.5

@@ -1,0 +1,30 @@
+@import "assets/resources.styl"
+@import "assets/icomoon.styl"
+@import "menu/template.styl"
+@import "scrollTop/template.styl"
+@import "gallery/template.styl"
+@import "counter/template.styl"
+@import "about/template.styl"
+
+
+.Header
+	padding 0
+	position fixed
+	right 0
+	left 0
+	z-index 4
+	height 3.5em
+	background white
+	// box-shadow 0 0 0 1px rgba(200, 200, 200, .5)
+	transition .3s
+@media screen and (min-width 992px)
+	.Header
+		height 8.7em
+@media screen and (min-width 1024px)
+	.Header
+		bprder 1px solid red
+		height 4em
+		background transparent
+	.headerBackground
+		transition .3s
+		background rgba(0, 0, 0, .8)

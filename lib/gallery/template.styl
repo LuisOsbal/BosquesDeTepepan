@@ -1,0 +1,122 @@
+@import "assets/resources.styl"
+
+.Slider
+	&-container
+		width 100%
+		height 100vh
+		overflow hidden
+	&-image
+		position relative
+		width 100%
+		height 100vh
+		display none
+	&-visible
+		display block
+	&-imageOne
+		background-image url("../images/proyecto/Bosque_de_Tepepan.jpg")
+		background-position center
+		background-repeat no-repeat
+		background-size cover
+	&-imageTwo
+		background-image url("../images/proyecto/Departamento_Bosque_de_Tepepan.jpg")
+		background-position center
+		background-repeat no-repeat
+		background-size cover
+	&-imageThree
+		background-image url("../images/proyecto/Departamento_Loft_Bosque_de_Tepepan.jpg")
+		background-position center
+		background-repeat no-repeat
+		background-size cover
+	&-imageFour
+		background-image url("../images/proyecto/Alberca_Bosque_de_Tepepan.jpg")
+		background-position center
+		background-repeat no-repeat
+		background-size cover
+	&-imageFive
+		background-image url("../images/proyecto/Fachada_Verdes_Bosque_de_Tepepan.jpg")
+		background-position center
+		background-repeat no-repeat
+		background-size cover
+	&-imageSix
+		background-image url("../images/proyecto/Vista_Plaza_Bosque_de_Tepepan.jpg")
+		background-position center
+		background-repeat no-repeat
+		background-size cover
+	&-btnControl
+		border solid 2px black
+		z-index 5
+		position absolute
+		display none
+	&-transparentImage
+		width 100%
+		height 100vh
+		background rgba(0, 0, 0, .4)
+		top 0
+		position absolute
+	&-title
+		color white
+		font-family 'Lato', sans-serif
+		font-size 1.7em
+		left 0
+		letter-spacing 4px
+		position absolute
+		right 0
+		text-align center
+		top 6em
+		z-index 2
+		display block
+		padding 0 .2em
+	&-buttonContainer
+		text-align center
+		display block
+		width 100%
+		margin-top 1em
+	&-button
+		text-decoration none
+		color white
+		background transparent
+		text-transform capitalize
+		padding 0 1em
+	&-buttonGreen
+		border 3px solid green
+	&-subtitle
+		font-size .4em
+		display none
+	&-mouseContainer
+		display none
+	&-mouse
+		overflow hidden
+
+@media screen and (min-width: 320px)
+	.Slider
+		&-title
+			font-size 2.3em
+			top 20vh
+		&-subtitle
+			display block
+		&-button
+			width 200px
+@media screen and (min-width: 568px)
+	.Slider
+		&-title
+			top 30vh
+		&-button
+			width 300px
+@media screen and (min-width: 900px)
+	.Slider
+		&-title
+			top 40vh
+		&-button
+			width 300px
+		&-mouseContainer
+			display block
+			width 100%
+			position absolute
+			bottom 1em
+			z-index 1
+			text-align center
+		&-mouse
+			cursor pointer
+			transition all 0.2s ease-in
+			&:hover
+				opacity 0.5

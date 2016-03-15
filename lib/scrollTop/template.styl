@@ -1,0 +1,22 @@
+@import "assets/resources.styl"
+
+.ScrollTop
+	&-scrollArrow
+		position fixed
+		right .5em
+		bottom .3em
+		background rgba(0, 0, 0, .5)
+		padding .3em
+		cursor pointer
+		display none
+		z-index 4
+		transition .3s
+		&:hover
+			background black
+.scrollArrowActive
+	transition .3s
+	display block
+.icon-chevron-up
+	color white
+	text-decoration none
+	font-size 2em

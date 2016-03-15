@@ -1,0 +1,201 @@
+@import "assets/resources.styl"
+
+.Menu
+	top 0
+	position fixed
+	transition 0.5s
+	box-shadow 0 4px 9px 0 rgba(50, 50, 50, 0.61)
+	right 0
+	left 0
+	z-index 30
+	width 100%
+	height 3.5em
+	&-rectangle
+		position relative
+		z-index 2
+		margin-left 7em
+		border-bottom 3.5em solid green
+		border-left 3em solid transparent
+	&-logoContainer
+		display block
+		position absolute
+		top 0
+		margin .3em 0 0 1.2em
+	&-mobileLogo
+		width 6em
+	&-largeLogo
+		display none
+	&-mobileContainer
+		position absolute
+		display block
+		left 0
+		right 0
+		top 0
+		margin 0
+		padding 0
+		z-index 3
+	&-mobileButton
+		background-color transparent
+		border 0
+		border-bottom .30em solid hsl(0,0,98%)
+		border-top .30em solid hsl(0,0,98%)
+		cursor pointer
+		font-size 1em
+		height 1.5em
+		margin 1em 2em
+		outline 0
+		position relative
+		width 2.5em
+		line-height 3.5em
+		float right
+		&::after,
+		&::before
+			border-bottom .25em solid hsl(0,0,98%)
+			bottom .375em
+			content ''
+			height 0
+			left 0
+			position absolute
+			right 0
+	&-list
+		position fixed
+		top 3.5em
+		height 100%
+		background backgroundList
+		margin 0
+		overflow-y scroll
+		width 75%
+		padding 0
+		left -75%
+		transition .3s
+		z-index 3
+		&.isActiveMenu
+			left 0
+	&-item
+		list-style none
+		text-align center
+		border-bottom 1px solid borderListMobile
+	&-link
+		color letterColor
+		height 3em
+		line-height 3em
+		display block
+		text-transform uppercase
+		text-decoration none
+		transition .3s
+		font-weight 600
+		&:hover
+			letter-spacing .1em
+			background backgroundList
+			color white
+.isActive
+	border-color transparent
+	&::after,
+	&::before
+		transition transform 200ms ease-out
+	&::after
+		transform rotateZ(45deg)
+	&::before
+		transform rotateZ(-45deg)
+
+@media screen and (min-width 992px)
+	.Menu
+		height 8.7em
+		z-index 5
+		&-rectangle
+			margin-left 14em
+			border-bottom 3.5em solid transparent
+			border-left 2.7em solid transparent
+		&-mobileContainer
+			display none
+		&-logoContainer
+			position relative
+			margin -3em 0 0 0;
+			text-align center
+		&-mobileLogo
+			display none
+		&-largeLogo
+			display inline-block
+			width 12.5em
+			z-index 1
+		&-list
+			width 100%
+			position relative
+			display block
+			width auto
+			top -.3em
+			overflow-y hidden
+			background transparent
+			padding 0 1.5em
+			left auto
+			text-align center
+			height 2.5em
+		&-item
+			border-bottom none
+			vertical-align top
+			height 2.5em
+			line-height 4em
+			display inline-block
+		&-link
+			padding 0 .5em
+			height 3.5em
+			line-height 3.5em
+			letter-spacing .1em
+			transition .3s
+			color black
+			margin 0 .4em
+			font-size .8em
+@media screen and (min-width 1024px)
+	.Menu
+		height 4em
+		z-index 5
+		&-rectangle
+			margin-left 14em
+			border-bottom 3.5em solid transparent
+			border-left 2.7em solid transparent
+		&-mobileContainer
+			display none
+		&-logoContainer
+			margin 0 0 0 1em
+			display block
+			position absolute
+			top 0
+		&-mobileLogo
+			display none
+		&-largeLogo
+			height 3.5em
+			line-height 3.5em
+			display block
+			width 13em
+			z-index 1
+		&-list
+			width auto
+			position relative
+			top -3.5em
+			overflow-y hidden
+			background transparent
+			display block
+			padding 0 1.5em
+			left auto
+			float right
+			z-index 5
+			height 4em 
+		&-item
+			vertical-align top
+			height 4em
+			line-height 4em
+			display inline-block
+		&-link
+			padding 0 .5em
+			height 4.6em
+			line-height 4.6em
+			letter-spacing .1em
+			transition .3s
+			color white
+			margin 0 .4em
+			&:hover
+				border-bottom 5px solid green
+				// color letterColor
+				background rgba(255, 255, 255, .2)
+.colorItem
+	color letterColor
