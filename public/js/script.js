@@ -1,4 +1,18 @@
-/*  Test if windows has focus.  */
+
+
+/*  It prepares the preloader and shows the content after charging all elements. */
+window.addEventListener('DOMContentLoaded', function() {
+    new QueryLoader2(document.querySelector("body"), {
+        barColor: "#efefef",
+        backgroundColor: "#8EA040",
+        percentage: true,
+        barHeight: 1,
+        minimumTime: 200,
+        fadeOutTime: 1000,
+
+        // background-image: url("../images/proyecto/Bosque_de_Tepepan.jpg")
+    });
+});
 
 
 
@@ -25,7 +39,7 @@ $(function () {
 //         menu      =  $(".Menu-list");
 //     clickItem.on('click', function (item) {
 //         item.preventDefault();
-//         menu.toggleClass('isActiveMenu');     
+//         menu.toggleClass('isActiveMenu');
 //     })
 // });
 
@@ -156,3 +170,7 @@ function SliderNextImage () {
         };
     });
 };
+
+$(function () {
+    $('#gallery a').lightBox();
+});

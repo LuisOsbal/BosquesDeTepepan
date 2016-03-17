@@ -5,8 +5,14 @@ html(lang="es")
 		meta(charset="UTF-8")
 		title Bosque de Tepepan
 		meta(name="description" content="Luis Osnaya")
-		//- Humans
 		meta(name="author" content="Luis Osnaya")
+		//- Favicons
+		link(rel='icon', sizes='16x16 32x32 48x48 64x64', href='../public/images/logos/favicon.ico')
+		link(rel="apple-touch-icon-precomposed", sizes="144x144", href="../public/images/apple/iPadRetina.png")
+		link(rel="apple-touch-icon-precomposed", sizes="114x114", href="../public/images/apple/iPhoneRetina.png")
+		link(rel="apple-touch-icon-precomposed", sizes="72x72", href="../public/images/apple/iPad.png")
+		link(rel="apple-touch-icon-precomposed", sizes="57x57", href="../public/images/apple/iPhone.png")
+		//- Humans
 		link(type="text/plain" rel="author" href="http://bosquesdetepepan.com.mx//docs/humans.txt")
 		meta(name="Copyright" content="http://bosquesdetepepan.com.mx/")
 		meta(name="robots" content="all")
@@ -14,15 +20,29 @@ html(lang="es")
 		meta(name="viewport", content="width=device-width, minimum-scale=1, maximum-scale=1")
 		meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
 		//- CSS
-		link(rel="stylesheet", href="./public/css/normalize.css")
-		link(rel="stylesheet", href="./public/css/animate.css")
-		link(rel="stylesheet", href="./public/css/style.css")
-		//- Favicons
-		link(rel="shortcut icon", type="image/x-icon", href="../public/images/favicon.ico")
-		link(rel="apple-touch-icon-precomposed", sizes="144x144", href="../public/images/apple/iPadRetina.png")
-		link(rel="apple-touch-icon-precomposed", sizes="114x114", href="../public/images/apple/iPhoneRetina.png")
-		link(rel="apple-touch-icon-precomposed", sizes="72x72", href="../public/images/apple/iPad.png")
-		link(rel="apple-touch-icon-precomposed", sizes="57x57", href="../public/images/apple/iPhone.png")
+		link(rel="stylesheet", type="text/csss" href="./public/css/normalize.css")
+		link(rel="stylesheet", type="text/csss" href="./public/css/animate.css")
+		link(rel="stylesheet", type="text/csss" href="./public/css/style.css")
+		link(rel="stylesheet", type="text/csss" href="./public/css/lightbox.css")
+		//- og tags Facebook
+		meta(property="fb:admins" content="")
+		meta(property="og:description" content="")
+		meta(property="og:title" content="")
+		meta(property="og:type" content="website")
+		meta(property="og:url" content="")
+		meta(property="og:image" content="")
+		meta(property="og:site_name" content="")
+		//- og tags Google+
+		meta(itemprop="description" content="")
+		//- Twitter Cards
+		meta(property="twitter:account_id" content="")
+		meta(name="twitter:card" content="")
+		meta(name="twitter:site" content="")
+		meta(name="twitter:title" content="")
+		meta(name="twitter:description" content="")
+		meta(name="twitter:creator" content="")
+		meta(name="twitter:image:src" content="")
+		meta(name="twitter:domain" content="")
 		//- Analytics
 		//- script(src="./public/js/analytics.js")
 	body
@@ -33,7 +53,14 @@ html(lang="es")
 		include ./about/template.jade
 		include ./space/template.jade
 		include ./amenities/template.jade
+		include ./decorations/template.jade
+		include ./sustainability/template.jade
+		include ./diagrams/template.jade
 		//- include ./landing/template.jade
+		include ./contact/template.jade
 
 	script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
-	script(src="./public/js/script.js")
+	script(src="./public/js/queryloader.js", type="text/javascript")
+	script(src="./public/js/script.js", type="text/javascript")
+	script(src="./public/js/lightbox.js", type="text/javascript")
+	include ./preloader/template.jade

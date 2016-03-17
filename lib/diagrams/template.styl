@@ -1,0 +1,39 @@
+@import "assets/resources.styl"
+
+.Diagrams
+	display block
+	&-title
+		margin 0
+		padding 3em .5em 1em .5em
+		text-transform uppercase
+		font-size 1.5em
+		font-weight 700
+		color borderListMobile
+	&-subtitle
+		text-align center
+	&-containerImage
+		padding .5em 1em
+	&-image
+		width 100%
+		border-radius 1em
+		&:hover
+			cursor pointer
+			opacity .4
+@media screen and (min-width 768px)
+	.Diagrams
+		&-title
+			margin 0
+			padding 3.5em .5em 1em .5em
+			font-size 2.5em
+		&-containerImage
+			text-align center
+		&-image
+			width 20%
+			margin .5em
+			display inline-block
+@media screen and (min-width 1024px)
+	.Diagrams
+		&-title
+			margin 0
+			padding 2em .5em 1em .5em
+			font-size 2.5em

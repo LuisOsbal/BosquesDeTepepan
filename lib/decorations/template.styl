@@ -1,9 +1,7 @@
 @import "assets/resources.styl"
 
-.Space
-	&-container
-		width 100%
-		display block
+.Decorations
+	display block
 	&-title
 		margin 0
 		padding 3em .5em 0 .5em
@@ -11,27 +9,30 @@
 		font-size 1.5em
 		font-weight 700
 		color borderListMobile
-	&-subContainer
-		color letterColor
-		font-weight 300
-		margin 1em 1em
-		font-size 1.2em
-	&-contaimerImages
+	&-subtitle
 		text-align center
-		margin 1em
+	&-containerImage
+		padding .5em 1em
 	&-image
 		width 100%
+		border-radius 1em
+		&:hover
+			cursor pointer
+			opacity .4
 @media screen and (min-width 768px)
-	.Space
+	.Decorations
 		&-title
 			margin 0
 			padding 3.5em .5em 0 .5em
 			font-size 2.5em
-		&-contaimerImages
-			padding 2em 4em
-
+		&-containerImage
+			text-align center
+		&-image
+			width 30%
+			margin .5em
+			display inline-block
 @media screen and (min-width 1024px)
-	.Space
+	.Decorations
 		&-title
 			margin 0
 			padding 2em .5em 0 .5em

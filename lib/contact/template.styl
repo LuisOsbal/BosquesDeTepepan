@@ -1,0 +1,97 @@
+@import "assets/resources.styl"
+@import "assets/icomoon.styl"
+.Contact
+	// border 1px solid red
+	width 100%
+	display block
+	&-container
+		position relative
+		height 100%
+		display block
+	&-images
+		background url('../images/landing/architecture.jpg') fixed
+		background-position center
+		background-repeat no-repeat
+		background-size cover
+		// height 1000px
+		display block
+		position relative
+		width 100%
+		z-index 1
+	&-title
+		margin 0
+		padding 3em .5em 0 .5em
+		text-transform uppercase
+		font-size 1.5em
+		font-weight 700
+		color white
+	&-paragraph
+		color white
+		padding 0 1em
+		font-size 1.1em
+	&-containerForm
+		// border 2px solid green
+		display block
+		// margin 1em
+		// margin 1em
+	&-contactForm
+		display block
+		margin 0 1em
+		// border 4px solid blue
+		// position absolute
+		// top 0
+	&-label
+		color white
+		padding 0 1em
+		font-size 1.1em
+		text-transform capitalize
+	&-contactInput
+		font-size 22px
+		display block
+		width 100%
+		height 100%
+		background none
+		background-image none
+		border 1px solid $gray-light
+		color white
+		border-radius 0
+		transition border-color .25s ease, box-shadow .25s ease
+		&:focus
+			border 3px solid green
+	&-contactButton
+		border 5px solid blue
+
+
+
+// 	&-containerWrapper
+// 		height 100%
+// 	&-wrapper
+// 		width 100%
+// 		height 200px
+// 		display block
+// 		margin-top 1em
+// 	&-wrapperNumber
+// 		font-size 2.5em
+// 	&-wrapperText
+// 		font-size 1.5em
+// 		color white
+// 		text-align center
+// 		text-transform capitalize
+// 	&-item
+// 		color white
+// 		text-align center
+// 	&-icon
+// 		width 100px
+// 		margin-top 2em
+// 	&-wrapperIcon
+// 		font-size 4em
+// 		margin-top .7em
+// @media screen and (min-width 768px)
+// 	.Contact
+// 		&-containerWrapper
+// 			text-align center
+// 		&-wrapper
+// 			width 15em
+// 			height 15em
+// 			display inline-block
+// 			margin .5em 1em

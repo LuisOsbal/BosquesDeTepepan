@@ -1,13 +1,14 @@
-/*	Google Fonts. 	*/
+/*	Google Fonts */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700")
 
 /* Colors 	*/
-green 		= #B1CC3E
+green = #B1CC3E
 greenBorder = #8EA040
-brown 		= #663513
+brown 	= #663513
 letterColor = #6D6D6D
 borderListMobile = #333333
 backgroundList	= #222222
+grayBackground = #f2f2f2
 
 
 .Strong
@@ -27,3 +28,13 @@ backgroundList	= #222222
 	right 2em
 .left
 	left 2em
+.middleLine
+	&:after
+		text-align center
+		content ''
+		display block
+		margin auto
+		width 5em
+		height 5px
+		background green
+		margin-top .5em
