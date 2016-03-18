@@ -4,15 +4,17 @@ section(id="contact", class="Contact")
 			h3(class="Contact-title afterLineDecoration") DÉJANOS UN COMENTARIO
 			p(class="Contact-paragraph") ¿Tienes alguna duda? Déjanos un comentario y con gusto te atenderemos.
 			div(class="Contact-containerForm")
-				form(action="", method="post", class="Contact-contactForm")
+				form(action="contact.php", method="post", class="Contact-contactForm")
 					label(class="Contact-label") nombre
-					input(type="text", class="Contact-contactInput")
+					input(id="name", name="name", type="text", class="Contact-contactInput", required)
 					label(class="Contact-label") correo electronico
-					input(type="email", class="Contact-contactInput")
+					input(id="email", name="email", type="email", class="Contact-contactInput",  required)
 					label(class="Contact-label") telefono
-					input(type="number", class="Contact-contactInput")
+					input(id="phone", name="phone", type="number", class="Contact-contactInput", required)
 					label(class="Contact-label") movil
-					input(type="number", class="Contact-contactInput")
+					input(id="mobile", name="mobile", type="number", class="Contact-contactInput")
 					label(class="Contact-label") mensaje
-					input(type="textarea", class="Contact-contactInput")
-					input(type="submit", class="Contact-contactButton") Enviar comentario
+					input(id="message", name="message", type="textarea", class="Contact-contactArea")
+					button(type="submit", class="Contact-contactButton") Enviar comentario
+			h3(class="Contact-title afterLineDecoration") Nuestra ubicación
+			iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1583.5110005408885!2d-99.15249475051907!3d19.27170479870348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce00e6cf9699c5%3A0xaf745e06dfe56e60!2sBosques+de+Tepepan!5e0!3m2!1ses-419!2smx!4v1457640721201" width="100%" height="300" frameborder="0" style="border:0" class="Contact-googleMaps")

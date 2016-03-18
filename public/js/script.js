@@ -32,18 +32,6 @@ $(function () {
     });
 });
 
-
-/* It shows and hide the menu when is clicked on some link. */
-// $(function () {
-//     var clickItem = $(".Menu-link"),
-//         menu      =  $(".Menu-list");
-//     clickItem.on('click', function (item) {
-//         item.preventDefault();
-//         menu.toggleClass('isActiveMenu');
-//     })
-// });
-
-
 /*  Changes the style of the menu bar.  */
 $(function() {
     var scrollArrow = $(".ScrollTop-scrollArrow");
@@ -78,28 +66,27 @@ $(function() {
 });
 
 /*  Wrapper counter.    */
+$.fn.jQuerySimpleCounter = function( options ) {
+    var settings = $.extend({
+        start:  0,
+        end:    100,
+        easing: 'swing',
+        duration: 400,
+        complete: ''
+    }, options );
 
-    $.fn.jQuerySimpleCounter = function( options ) {
-        var settings = $.extend({
-            start:  0,
-            end:    100,
-            easing: 'swing',
-            duration: 400,
-            complete: ''
-        }, options );
+    var thisElement = $(this);
 
-        var thisElement = $(this);
-
-        $({count: settings.start}).animate({count: settings.end}, {
-            duration: settings.duration,
-            easing: settings.easing,
-            step: function() {
-                var mathCount = Math.ceil(this.count);
-                thisElement.text(mathCount);
-            },
-            complete: settings.complete
-        });
-    };
+    $({count: settings.start}).animate({count: settings.end}, {
+        duration: settings.duration,
+        easing: settings.easing,
+        step: function() {
+            var mathCount = Math.ceil(this.count);
+            thisElement.text(mathCount);
+        },
+        complete: settings.complete
+    });
+};
 
 $('#itemOne').jQuerySimpleCounter({end: 19,duration: 3000});
 $('#itemTwo').jQuerySimpleCounter({end: 13,duration: 3000});
@@ -108,7 +95,7 @@ $('#itemFour').jQuerySimpleCounter({end: 246,duration: 2500});
 
 /*  It allows the transition of photos of the main gallery (slider.)  */
 $(document).ready(function() {
-    var time = setInterval(function(){SliderNextImage();}, 6000);
+    var time = setInterval(function(){SliderNextImage();}, 8000);
     $('#btnBack').click(function() {
         var size = $('.Slider-container').find('.Slider-image').size();
         $('.Slider-container').find('.Slider-image').each(function (index,value){

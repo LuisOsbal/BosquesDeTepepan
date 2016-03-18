@@ -4,7 +4,7 @@ html(lang="es")
 		//- Basic Needs
 		meta(charset="UTF-8")
 		title Bosque de Tepepan
-		meta(name="description" content="Luis Osnaya")
+		meta(name="description" content="")
 		meta(name="author" content="Luis Osnaya")
 		//- Favicons
 		link(rel='icon', sizes='16x16 32x32 48x48 64x64', href='../public/images/logos/favicon.ico')
@@ -13,7 +13,7 @@ html(lang="es")
 		link(rel="apple-touch-icon-precomposed", sizes="72x72", href="../public/images/apple/iPad.png")
 		link(rel="apple-touch-icon-precomposed", sizes="57x57", href="../public/images/apple/iPhone.png")
 		//- Humans
-		link(type="text/plain" rel="author" href="http://bosquesdetepepan.com.mx//docs/humans.txt")
+		link(type="text/plain" rel="author" href="http://bosquesdetepepan.com.mx/public/docs/humans.txt")
 		meta(name="Copyright" content="http://bosquesdetepepan.com.mx/")
 		meta(name="robots" content="all")
 		//- Mobile Specific Metas
@@ -56,11 +56,12 @@ html(lang="es")
 		include ./decorations/template.jade
 		include ./sustainability/template.jade
 		include ./diagrams/template.jade
-		//- include ./landing/template.jade
 		include ./contact/template.jade
+		include ./footer/template.jade
 
-	script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
-	script(src="./public/js/queryloader.js", type="text/javascript")
-	script(src="./public/js/script.js", type="text/javascript")
-	script(src="./public/js/lightbox.js", type="text/javascript")
-	include ./preloader/template.jade
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
+		//- script(src="./public/js/queryloader.js", type="text/javascript")
+		script(src="./public/js/script.js", type="text/javascript")
+		script(src="./public/js/wow.js", type="text/javascript")
+		script(src="./public/js/lightbox.js", type="text/javascript")
+		//- include ./preloader/template.jade
